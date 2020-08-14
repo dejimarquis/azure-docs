@@ -23,9 +23,9 @@ The solution described in this article will allow you push digital twins telemet
 
 ## Prerequisites
 
-Before you can integrate with Azure SignalR service, you need to have an **Azure Digital Twins instance**. This instance should be set up with the ability to update digital twin information based on data, as you'll need to update twin information a few times to see real time updates in your client application. 
+1. Before you can integrate with Azure SignalR service, you need to have completed the Azure Digital Twins [*Tutorial: Connect an end-to-end solution*](./tutorial-end-to-end.md) because this tutorial will builds on top of it. The connect an end-to-end solution tutorial walks you through setting up an Azure Digital Twins instance that works with a virtual IoT device to trigger digital twin updates.
 
-If you do not have this set up already, you can create it by following the Azure Digital Twins [*Tutorial: Connect an end-to-end solution*](./tutorial-end-to-end.md). The tutorial will walk you through setting up an Azure Digital Twins instance that works with a virtual IoT device to trigger digital twin updates.
+1. Have [Node.js](https://nodejs.org/en/) installed on your machine
 
 ## Solution architecture
 
@@ -33,7 +33,7 @@ You will be attaching Azure SignalR Service to Azure Digital Twins through the p
 
 :::row:::
     :::column:::
-        :::image type="content" source="media/how-to-integrate-azuresignalr/signalr-integration-topology.png" alt-text="A view of Azure services in an end-to-end scenario, highlighting Azure-SignalR" lightbox="media/how-to-integrate-azuresignalr/signalr-integration-topology.png":::
+        :::image type="content" source="media/how-to-integrate-azure-signalr/signalr-integration-topology.png" alt-text="A view of Azure services in an end-to-end scenario, highlighting Azure-SignalR" lightbox="media/how-to-integrate-azure-signalr/signalr-integration-topology.png":::
     :::column-end:::
     :::column:::
     :::column-end:::
@@ -119,7 +119,7 @@ Back on the *Create Event Subscription* page, hit **Create**.
 
 1. Add http://localhost:3000 as an allowed origin in the CORS setting of the function app
 
-    ![CORS Setting in Azure Function](../media/how-to-integrate-azure-signalr/cors-setting-azurefunction.png)
+    ![CORS Setting in Azure Function](media/how-to-integrate-azure-signalr/cors-setting-azurefunction.png)
 
 1. Run the following command to install the dependent node packages
 
