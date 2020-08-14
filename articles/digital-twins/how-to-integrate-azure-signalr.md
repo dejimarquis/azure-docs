@@ -47,14 +47,14 @@ Sign in to the Azure portal at <https://portal.azure.com/> with your Azure accou
 
 ## Clone the sample application
 
-While the service is deploying, let's switch to working with code. Clone the [sample app from GitHub](<Azure Sample URL>).
+While the service is deploying, let's switch to working with code. Clone the [sample app from GitHub](https://github.com/Azure-Samples/digital-twins-samples), if you haven't.
 
 1. Open a git terminal window. Change to a folder where you want to clone the sample project.
 
 1. Run the following command to clone the sample repository. This command creates a copy of the sample app on your computer.
 
     ```bash
-    git clone <Azure Sample URL>
+    git clone https://github.com/Azure-Samples/digital-twins-samples
     ```
 
 ## Configure and run the Azure Function app
@@ -80,7 +80,7 @@ While the service is deploying, let's switch to working with code. Clone the [sa
 
 1. Publish your functions to Azure using the steps similar to that of the [connect an end to end solution](https://docs.microsoft.com/en-us/azure/digital-twins/tutorial-end-to-end#publish-the-app)
 
-1. Finally, add your Azure Signal connection string to the function's appsetting
+1. Finally, add your Azure Signal connection string to the function's appsettings
  
     ```bash
     az functionapp config appsettings set -g <your-resource-group> -n <your-App-Service-(function-app)-name> --settings "AzureSignalRConnectionString=<your-Azure-SignalR-ConnectionString>"
