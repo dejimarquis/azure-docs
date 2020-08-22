@@ -31,13 +31,7 @@ The solution described in this article will allow you push digital twins telemet
 
 You will be attaching Azure SignalR Service to Azure Digital Twins through the path below.
 
-:::row:::
-    :::column:::
-        :::image type="content" source="media/how-to-integrate-azure-signalr/signalr-integration-topology.png" alt-text="A view of Azure services in an end-to-end scenario, highlighting Azure-SignalR" lightbox="media/how-to-integrate-azure-signalr/signalr-integration-topology.png":::
-    :::column-end:::
-    :::column:::
-    :::column-end:::
-:::row-end:::
+:::image type="content" source="media/how-to-integrate-azure-signalr/signalr-integration-topology.png" alt-text="A view of Azure services in an end-to-end scenario, highlighting Azure-SignalR" lightbox="media/how-to-integrate-azure-signalr/signalr-integration-topology.png":::
 
 ## Log in to Azure
 
@@ -107,6 +101,8 @@ On the *Create Event Subscription* page, fill in the fields as follows (fields f
 Back on the *Create Event Subscription* page, hit **Create**.
 
 ## Configure and run the web app
+1. Before configuring the web app, make sure the Device Simulator program is running
+
 1. Go to the folder where you cloned the repository, open the WebApp folder using Visual Studio Code or any editor of your choice
 
 1. In the src/App.js, replace the URL in the **HubConnectionBuilder** with the HTTP endpoint of the **negotiate** function
@@ -132,7 +128,10 @@ Back on the *Create Event Subscription* page, hit **Create**.
     ```bash
     npm start
     ```
-1. Once running, you should start seeing ADT telemetry being received in realtime
+
+1. Once running, you should start seeing ADT telemetry being received in realtime like in the screenshot below
+
+    ![Web App snippet](media/how-to-integrate-azure-signalr/signalr-webapp-output.png)
    
 ## Next steps
 
