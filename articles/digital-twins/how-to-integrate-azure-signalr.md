@@ -39,21 +39,13 @@ Sign in to the Azure portal at <https://portal.azure.com/> with your Azure accou
 
 [!INCLUDE [Create instance](../azure-signalr/includes/signalr-quickstart-create-instance.md)]
 
-## Clone the sample application
+## Download the sample application
 
-While the service is deploying, let's switch to working with code. Clone the [sample app from GitHub](https://github.com/Azure-Samples/digital-twins-samples), if you haven't.
-
-1. Open a git terminal window. Change to a folder where you want to clone the sample project.
-
-1. Run the following command to clone the sample repository. This command creates a copy of the sample app on your computer.
-
-    ```bash
-    git clone https://github.com/Azure-Samples/digital-twins-samples
-    ```
+While the service is deploying, let's switch to working with code. Download the [sample app](https://docs.microsoft.com/en-us/samples/azure-samples/digital-twins-samples/digital-twins-samples/), if you no longer have it from the prerequisite tutorial.
 
 ## Configure and run the Azure Function app
 
-1. Start Visual Studio (or another code editor) and open the solution in the cloned repository.
+1. Start Visual Studio (or another code editor) and open the solution in the ADTSampleApp folder.
 
 1. In the browser where the Azure portal is opened, confirm the SignalR Service instance you deployed earlier was successfully created by searching for its name in the search box at the top of the portal. Select the instance to open it.
 
