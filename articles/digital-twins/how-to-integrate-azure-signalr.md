@@ -168,7 +168,7 @@ Back on the *Create Event Subscription* page, hit **Create**.
 ## Configure and run the web app
 1. Before configuring the web app, make sure the Device Simulator program is running
 
-1. Download the Web App sample from [here](<to-be-provided>)
+1. Download the Web App sample from [here](https://github.com/Azure-Samples/digitaltwins-signalr-webapp-sample)
 
 1. Open the WebApp folder using Visual Studio Code or any editor of your choice
 
