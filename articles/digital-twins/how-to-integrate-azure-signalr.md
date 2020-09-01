@@ -105,9 +105,7 @@ While the service is deploying, let's switch to working with code. Download the 
                 {
                     { "temperatureInFahrenheit", temperature},
                 };
-    
-                log.LogInformation($"Sending Dashboard data: {message}");
-    
+        
                 return signalRMessages.AddAsync(
                     new SignalRMessage
                     {
@@ -160,7 +158,7 @@ Back on the *Create Event Subscription* page, hit **Create**.
 ## Configure and run the web app
 1. Before configuring the web app, make sure the Device Simulator program is running
 
-1. Download the Web App sample from [here](https://github.com/Azure-Samples/digitaltwins-signalr-webapp-sample)
+1. Download the Web App sample from [here](https://docs.microsoft.com/en-us/samples/azure-samples/digitaltwins-signalr-webapp-sample/digital-twins-samples/?branch=master)
 
 1. Open the WebApp folder using Visual Studio Code or any editor of your choice
 
